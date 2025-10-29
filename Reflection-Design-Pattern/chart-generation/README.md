@@ -3,7 +3,7 @@
 #### ob.1
 -----
 
-I had hit an error during the first chart generation where the LLM included one line in the code to merge the month and year, which was causing an issue. While I tried to avoid that via prompt, it ended up generating another format of code, which is why I had added an additional line in the v1 chart generation part of the code to specifically comment out that part of the code. 
+I had hit an error during the first chart generation where the LLM included one line in the code to merge the date and year, which was causing an issue. But the date column was already formated in the dataframe so this step was unncessary. While I tried to avoid that via prompt, it ended up generating another format of code, which is why I had added an additional line in the v1 chart generation part of the code to specifically comment out that part of the code. 
 
 *I am assuming the seed value has been set to the API which is why the LLM generated the exact same code even after i tried to revert to the original prompt after my editing attempt.*
 
